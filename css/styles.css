@@ -1,0 +1,148 @@
+/* ========================= */
+/* SELECTOR UNIVERSAL */
+/* Aplica a TODOS los elementos de la página */
+*{
+    font-family: 'Times New Roman', Times, serif; /* Cambia la tipografía */
+    margin: 0; /* Quita márgenes automáticos */
+    padding: 0; /* Quita espacios internos automáticos */
+    box-sizing: border-box; /* Hace que padding y border no alteren el tamaño */
+}
+
+/* ========================= */
+/* CUERPO DE LA PAGINA */
+body{
+    max-width: 900px; /* Limita el ancho de la hoja de vida */
+    margin-left: 40px; /* Mueve todo el contenido hacia la izquierda */
+    padding: 30px; /* Espacio interno para que no quede pegado al borde */
+    line-height: 1.6; /* Espacio entre líneas de texto */
+    background-color: #fafafa; /* Color suave de fondo */
+}
+
+/* ========================= */
+/* TITULO PRINCIPAL (Nombre) */
+h1{
+    font-size: 32px; /* Tamaño grande para el nombre */
+    margin-bottom: 5px; /* Espacio debajo del título */
+}
+
+/* ========================= */
+/* SUBTITULO (cargo o profesión) */
+h2{
+    font-size: 18px;
+    color: #555; /* Color gris oscuro */
+    margin-bottom: 15px;
+}
+
+/* ========================= */
+/* MENU DE NAVEGACION */
+nav{
+    margin-bottom: 20px; /* Espacio debajo del menú */
+}
+
+/* Estilo de los enlaces del menú */
+nav a{
+    text-decoration: none; /* Quita el subrayado */
+    color: #2c5aa0; /* Color azul */
+    font-weight: bold; /* Texto en negrita */
+    margin-right: 10px; /* Espacio entre enlaces */
+}
+
+/* HOVER */
+/* Cambia color cuando pasas el mouse */
+nav a:hover{
+    color: darkred;
+}
+
+/* ========================= */
+/* SELECTOR DE ELEMENTO */
+/* Aplica estilo a todos los h3 */
+h3{
+    color: darkgoldenrod; /* Color dorado */
+    margin-top: 30px; /* Espacio arriba */
+    margin-bottom: 10px; /* Espacio abajo */
+}
+
+/* HOVER EN TITULOS */
+/* Cambia color cuando el mouse pasa por encima */
+h3:hover{
+    color: red;
+}
+
+/* ========================= */
+/* SELECTOR DE CLASE */
+/* Puede reutilizarse en varios elementos */
+.texto-color{
+    color: #7b3fe4; /* Color morado */
+}
+
+/* ========================= */
+/* SELECTOR DE ID */
+/* Solo puede existir uno en toda la página */
+#texto-formato-color{
+    color: darkgreen;
+}
+
+/* ========================= */
+/* EXPERIENCIA LABORAL */
+h4{
+    margin-top: 15px; /* Espacio arriba */
+    font-size: 18px;
+}
+
+/* ========================= */
+/* LISTAS */
+/* Estilo de las listas con viñetas */
+ul{
+    margin-left: 20px; /* Sangría para las viñetas */
+}
+
+/* ========================= */
+/* TABLA */
+table{
+    width: 100%; /* La tabla ocupa todo el ancho */
+    border-collapse: collapse; /* Une los bordes */
+    margin-top: 20px;
+}
+
+/* Celdas de la tabla */
+th, td{
+    border: 1px solid #ccc;
+    padding: 8px; /* Espacio interno */
+    text-align: center; /* Centra el texto */
+}
+
+/* Título de la tabla */
+caption{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* ========================= */
+/* SELECTOR HIJO DIRECTO */
+/* Solo afecta a los p que estén directamente dentro de .inputs */
+.inputs > p{
+    font-style: italic;
+}
+
+/* ========================= */
+/* HERMANO ADYACENTE */
+/* Selecciona el elemento inmediatamente después */
+.hermano-adyacente + p{
+    background-color: #eef7ff;
+    padding: 4px;
+}
+
+/* ========================= */
+/* HERMANOS GENERALES */
+/* Selecciona todos los h4 que estén después */
+.hermanos-general ~ h4{
+    color: #2c7a2c;
+}
+
+/* ========================= */
+/* FOOTER */
+footer{
+    text-align: center;
+    margin-top: 40px;
+    color: gray;
+}
